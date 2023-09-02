@@ -40,6 +40,7 @@ margin: 0 auto;
 }
 .menu {
     display: flex;
+    position: relative;
     gap: 40px;
 
 }
@@ -83,7 +84,20 @@ margin: 0 auto;
 .menu-item {
    color: #2e2f42;
     padding: 24px 0;
+
 }
+.current-page::after {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: #404BBF;
+    content: "";
+}
+
 .menu-link {
     color: #2e2f42;
     font-size: 16px;
@@ -112,6 +126,13 @@ address {
 .main-page {
     background: #2E2F42;
     padding: 188px 0;
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
+    url(/images/hero-image.jpg);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
 } 
 .main-title {
     color: #FFFFFF;
@@ -141,6 +162,7 @@ address {
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .button:hover,
@@ -166,7 +188,20 @@ address {
     column-gap: 24px;
     width: calc((100% - 72px) / 4);
 }
-
+.description-icon {
+    position: relative;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+}
+.description-list-icon {
+    position: absolute;
+    top: 24px;
+    left: 100px;
+}
 .description-list {
     display: flex;
     gap: 24px;
