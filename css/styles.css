@@ -456,3 +456,11 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 max-width: 264px;
 }
+
+.social-link-footer-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
